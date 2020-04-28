@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/js/components/Home'
-import About from '@/js/components/About'
+import UTestComp from '@/js/components/unit/UTestComp'
+import STestComp from '@/js/components/structural/STestComp'
 
 Vue.use(VueRouter)
 
@@ -12,12 +12,12 @@ const router = new VueRouter({
         {
             path: '/',
             name: 'home',
-            component: Home
+            component: UTestComp
         },
         {
-            path: '/about',
-            name: 'about',
-            component: About
+            path: '/test',
+            name: 'test',
+            component: STestComp
         }
     ]
 })
