@@ -47,7 +47,5 @@ echo "<template>
 
 touch "$directory_path"/"$file_name".scss
 
-echo "import $file_name from \"./$file_name\"
-
-export default $file_name"> "$directory_path"/index.js
+echo "export { default as $file_name } from './$file_name/$file_name'" >> "resources/js/components/$type_comp/index.js"
 
