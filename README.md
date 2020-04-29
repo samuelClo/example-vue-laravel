@@ -7,17 +7,16 @@ Fork this and start with fresh project ready to launch
 - Install back dependencies :
 
     `composer install`
-- Generate environnement  
+- Generate environnement :  
     Create .env file in the root,
-    copy paste the content of .env.example in .env
+    copy paste the content of .env.example in .env.
     ```bash
     # Generate application key 
     php artisan key:generate
     # Regenerate cached config file
     php artsan config:cache
-  # see [doc](https://laravel.com/docs/7.x/installation)
   ```
-  see https://laravel.com/docs/7.x/installation
+  See https://laravel.com/docs/7.x/installation.
 - Install front dependencies :
 
     `npm install`
@@ -36,12 +35,13 @@ Fork this and start with fresh project ready to launch
     Example :   
     `` npm run createComp UButton``  
     
-    That will create a folder in _ressources/js/unit_ with Vue component, a dedicated style and a index.js
-    file to make import more easy.  
-    Don't forget to modify the path in _scripts/create-comp.sh_.
+    That will create a folder in _ressources/js/components/unit_ with Vue component,
+     a dedicated style and add a line of named import in _ressources/js/components/unit/index.js_.  
+     
+    Don't forget to modify the system path in _scripts/create-comp.sh_.
 
 ### Sources
-I wused this sources to create this repository
+I used this sources to create this repository
 
 - https://github.com/vuejs/vue-router/tree/dev/examples/named-views
 - https://medium.com/@weehong/laravel-5-7-vue-vue-router-spa-5e07fd591981
