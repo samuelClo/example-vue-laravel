@@ -12,17 +12,17 @@
 </template>
 
 <script>
-    import { ULink, UButton } from '@/components/unit'
+import { ULink, UButton } from "@/components/unit";
 
-    export default {
-        name: 'SNavbar',
-        components: {
-            ULink,
-            UButton
-        }
+export default {
+    name: "SNavbar",
+    components: {
+        ULink,
+        UButton
     }
+};
 </script>
 
-<style  lang="scss" scoped>
-    @use "SNavBar";
+<style lang="scss" scoped>
+@import "SNavBar";
 </style>

@@ -1,13 +1,29 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 mix.webpackConfig({
     resolve: {
-        extensions: ['.js', '.vue'],
+        extensions: [".js", ".vue", "scss"],
         alias: {
-            '@': __dirname + '/resources/js'
+            "@": __dirname + "/resources/vue"
         }
-    }
-})
+    },
+    module: {
+        rules: [
+           {
+              test: /\.scss$/,
+              loader: "sass-loader",
+              options: {
+                 data: `          
+                 @import "@/assets/scss/fundations/_colors.scss";
+                 @import "@/assets/scss/fundations/_fonts.scss";
+                 @import "@/assets/scss/fundations/_typographies.scss";
+                 @import "@/assets/scss/_mixins.scss";
+                 `
+              }
+           }
+        ]
+     }
+});
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -19,5 +35,4 @@ mix.webpackConfig({
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/vue/app.js', 'public/js')

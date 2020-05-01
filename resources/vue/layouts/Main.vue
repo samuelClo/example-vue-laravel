@@ -8,15 +8,11 @@
 </template>
 
 <script>
-    import { SNavBar } from '@/components/structural'
+import { SNavBar } from "@/components/structural";
 
-    export default {
-        components: {
-            SNavBar,
-        }
+export default {
+    components: {
+        SNavBar
     }
+};
 </script>
-
-<style scoped>
-
-</style>

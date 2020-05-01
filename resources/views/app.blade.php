@@ -7,8 +7,6 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Laravel</title>
-
-        <link href="{{ asset('css/app.css') }}" />
     </head>
     <body>
         <div id="app">

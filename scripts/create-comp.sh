@@ -21,7 +21,7 @@ fi
 
 cd $roots_path
 
-directory_path="resources/js/components/$type_comp/$file_name"
+directory_path="resources/vue/components/$type_comp/$file_name"
 
 mkdir "$directory_path"
 
@@ -47,5 +47,5 @@ echo "<template>
 
 touch "$directory_path"/"$file_name".scss
 
-echo "export { default as $file_name } from './$file_name/$file_name'" >> "resources/js/components/$type_comp/index.js"
+echo "export { default as $file_name } from './$file_name/$file_name'" >> "resources/vue/components/$type_comp/index.js"
 
