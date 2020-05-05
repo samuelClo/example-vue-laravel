@@ -13,3 +13,10 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .editorconfig
+
+public/*
+!public/.htaccess
+!public/favicon.ico
+!public/index.php
+!public/robots.txt
+!public/web.config

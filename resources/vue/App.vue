@@ -1,19 +1,13 @@
 <template>
-    <main-layout>
-        <router-view />
-    </main-layout>
+    <router-view />
 </template>
 
 <script>
-import MainLayout from "@/layouts/Main.vue";
-
 export default {
-    name: "App",
-    components: {
-        MainLayout
-    }
+    name: "App"
 };
 </script>
+
 <style lang="scss">
-    @use '@/assets/scss/main.scss'
+@use '@/assets/scss/main.scss';
 </style>

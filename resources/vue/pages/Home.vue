@@ -4,6 +4,3 @@
     </div>
 </template>
 
-<script>
-
-</script>

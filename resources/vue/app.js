@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-import Routes from "@/routes.js";
+import Routes from "@/router/index";
 import App from "@/App";
 
 const app = new Vue({
