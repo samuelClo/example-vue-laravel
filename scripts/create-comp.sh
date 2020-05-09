@@ -42,7 +42,7 @@ echo "<template>
 </script>
 
 <style  lang=\"scss\" scoped>
-    @use \"$file_name\";
+    @import \"$file_name\";
 </style>" > "$directory_path"/"$file_name".vue
 
 touch "$directory_path"/"$file_name".scss
