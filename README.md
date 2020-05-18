@@ -14,7 +14,7 @@ Fork this and start with fresh project ready to launch
     # Generate application key
     php artisan key:generate
     # Regenerate cached config file
-    php artsan config:cache
+    php artisan config:cache
     ```
     See https://laravel.com/docs/7.x/installation.
 -   Install front dependencies :
